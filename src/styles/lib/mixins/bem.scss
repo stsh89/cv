@@ -1,0 +1,5 @@
+@mixin m($name) {
+  &--#{$name} {
+    @content;
+  }
+}

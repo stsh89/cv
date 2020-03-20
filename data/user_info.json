@@ -1,0 +1,111 @@
+{
+  "name": "Stanislav Shandyga",
+  "dateOfBirth": "17th September 1989",
+  "maritalStatus": "single",
+  "summary": "I am specializing in object-oriented approaches and RESTful API designs. I have solid background in Computer Science (algorithms, data structures, operating systems). I am familiar with SQL and NoSQL databases, networking and Linux shell scripting. I introduce myself as an ambitious problem solver with a passion for creativity. Personal qualities: positive team attitude, happy to help others, learn, and take on new challenges.",
+  "contacts": [
+    {"kind": "E-mail", "identifier": "stanislavshandyga@gmail.com"},
+    {"kind": "Telegram", "identifier": "https://t.me/iW7xYVKP6OMU5qwF"}
+  ],
+  "skills":  [
+    "Experience of working through all stages of a development project.",
+    "Having a logical approach to problem solving.",
+    "Strong understanding of professional software development practice.",
+    "Knowledge of HTTP and usage of REST principles.",
+    "Ability to navigate in the existing code.",
+    "Technology summary: UNIX shell, ruby, Ruby on Rails, elixir, Phoenix, JavaScript, PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ, git, docker.",
+    "English language level: Upper Intermediate (I speak and understand well but still make some occasional mistakes.)"
+  ],
+  "certifications": [
+    "MongoDB for Developers, a course of study offered by MongoDB, Inc. Certification can be verified at http://education.mongodb.com/downloads/certificates/7509b38c6cfa4a7ab209cb6ff3b2c5b0/Certificate.pdf"
+  ],
+  "educations": [
+    {
+      "timeFrame": {"from": "November 2014", "to": "May 2015"},
+      "companyInfo": {
+        "siteLink": "http://www.111minutes.com/",
+        "companyName": "111minutes"
+      },
+      "descriptions": [
+        {
+          "kind": "List of the covered themes and practical trials",
+          "text": "java core, junit, html, javascript, css, ruby, Ruby on Rails, MySQL, MongoDB, bash, xpath, regex, uml diagrams, websocket, control version systems, code coverage analysis, automated system testing, continuous integration systems, TDD, BDD, GRASP, SOLID, Agile and Scrum methodologies."
+        }
+      ]
+    },
+    {
+      "timeFrame": {"from": "September 2006", "to": "May 2010"},
+      "companyInfo": {
+        "siteLink": "http://www.diit.edu.ua/",
+        "companyName": "Dnipropetrovsk National University of railway transport named after academician V.  Lazaryan "
+      },
+      "descriptions": [
+        {
+          "kind": "Degree",
+          "text": "Bachelor in computer science."
+        }
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "timeFrame": {"from": "August 2016", "to": "Present Time"},
+      "companyInfo": {
+        "siteLink": "https://anadea.info/",
+        "companyName": "Anadea",
+        "jobTitle": "Software engineer"
+      },
+      "descriptions": [
+        {
+          "kind": "Web application development frameworks in use",
+          "text": "Ruby on Rails, Elixir/Phoenix"
+        },
+        {
+          "kind": "Core expertise",
+          "text": "eCommerce Web development"
+        },
+        {
+          "kind": "Responsibilities and duties",
+          "text": "communication with customers; estimating assigned tasks; working closely together with business, design and other stakeholders of the project; analyzing and improving upon existing systems, services and infrastructure; optimizing applications for maximum speed and scalability; high-load project maintenance; creating high-quality and scalable solutions; working in a small development team and cooperating with cross functional colleagues; examining and integrating different 3rd party services (payment systems, data analytics software, etc.)."
+        }
+      ]
+    },
+    {
+      "timeFrame": {"from": "June 2015", "to": "August 2016"},
+      "companyInfo": {
+        "siteLink": "http://www.111minutes.com/",
+        "companyName": "111minutes",
+        "jobTitle": "Software engineer"
+      },
+      "descriptions": [
+        {
+          "kind": "Web application development frameworks in use",
+          "text": "Ruby on Rails, Meteor"
+        },
+        {
+          "kind": "Core expertise",
+          "text": "mobile APIs for Travel & Local apps"
+        },
+        {
+          "kind": "Responsibilities and duties",
+          "text": "developing and maintaining backend functionality of applications; participating in daily meetings; simultaneously managing several databases; provide guidance to other team members on web development issues; identifying and correcting software deficiencies."
+        }
+      ]
+    },
+    {
+      "timeFrame": {"from": "January 2012", "to": "October 2014"},
+      "companyInfo": {
+        "siteLink": "http://dndzschool18.klasna.com/",
+        "companyName": "School №18",
+        "jobTitle": "Support engineer"
+      },
+      "descriptions": [
+        {
+          "kind": "Responsibilities and duties",
+          "text": "handling database of the institution; school site supporting; setting up work machines and installing required software; servicing peripherals; maintaining a variety of employee-facing applications; assisting to employees."
+        }
+      ]
+    }
+  ],
+  "hobbies": "Chess, table tennis, reading, swimming, computer games."
+}
