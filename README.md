@@ -12,7 +12,7 @@ Start dev server
 
 # Deploy
 
-Deploy to Github pages (run this command from the root folder):
+Check following [article](https://medium.com/linagora-engineering/deploying-your-js-app-to-github-pages-the-easy-way-or-not-1ef8c48424b7) before deploy. Once you are ready check scripts/deploy file and run it if it satisfies you:
 
 ```
 ./scripts/deploy
