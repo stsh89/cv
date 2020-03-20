@@ -9,3 +9,13 @@ Start dev server
 ```
 ./scripts/server
 ```
+
+# Deploy
+
+Deploy to Github pages (run this command from the root folder):
+
+```
+./scripts/deploy
+```
+
+Check live version after deploy at [https://stsh89.github.io/cv](https://stsh89.github.io/cv/)
