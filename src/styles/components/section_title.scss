@@ -1,4 +1,8 @@
 .section-title {
-  font-weight: lighter;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: $main-color;
+  &::before {
+    content: "## "
+  }
 }

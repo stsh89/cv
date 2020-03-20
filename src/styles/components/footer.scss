@@ -1,11 +1,15 @@
 .footer {
-  border-top: 1px solid grey;
-  padding-top: 5px;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  background: $background-color;
+}
+
+.footer-body {
+  padding-top: 1em;
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
-  margin-top: 20px;
-  margin-right: 0;
-  margin-bottom: 20px;
-  margin-left: 0;
+  border-top: 2px dashed $text-color--dark;
 }
