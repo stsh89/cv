@@ -24,6 +24,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - run: npm install
       - run: ./scripts/deploy
 
       - name: Deploy
