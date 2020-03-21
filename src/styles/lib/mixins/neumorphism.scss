@@ -6,3 +6,8 @@
 @mixin neu-square {
   @include neu-shadow;
 }
+
+@mixin neu-circle {
+  border-radius: 50%;
+  @include neu-shadow;
+}

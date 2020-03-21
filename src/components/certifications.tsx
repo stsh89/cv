@@ -3,14 +3,12 @@ import PageSection from "./page_section"
 
 export default function Skills(props: { listOfCertifications: string[] }): JSX.Element {
   const certifications = props.listOfCertifications.map((certification, index) => {
-      return <li key={`certification-${index}`}>{certification}</li>
+      return <p key={`certification-${index}`}>{certification}</p>
   })
-
-  const content = [<ul>{certifications}</ul>]
 
   return (
     <PageSection title={"Certifications"}>
-      {content}
+      {certifications}
     </PageSection>
   )
 }

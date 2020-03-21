@@ -1,14 +1,18 @@
 .footer {
+  width: 75%;
+  margin: 0 auto;
   padding-top: 1em;
   padding-right: 1em;
   padding-bottom: 1em;
   padding-left: 1em;
   background: $background-color;
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .footer-body {
-  display: flex;
-  flex-direction: row-reverse;
   padding-top: 1em;
   padding-right: 0;
   padding-bottom: 0;
