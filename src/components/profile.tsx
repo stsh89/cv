@@ -1,6 +1,5 @@
 import * as React from "react"
-import Section from "./common/section"
-import SectionTitle from "./section_title"
+import PageSection from "./page_section"
 
 export default function Profile(props: {
   summary: string, contacts: {kind: string, identifier: string}[]
@@ -14,15 +13,12 @@ export default function Profile(props: {
   })
 
   return (
-    <Section>
-      <div>
-        <SectionTitle name={"Profile"} />
-        <p>{props.summary}</p>
-        <p>Contacts</p>
-        <ul>
-          {contacts}
-        </ul>
-      </div>
-    </Section>
+    <PageSection title="Profile">
+      <p>{props.summary}</p>
+      <p>Contacts</p>
+      <ul>
+        {contacts}
+      </ul>
+    </PageSection>
   )
 }

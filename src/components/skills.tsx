@@ -1,18 +1,16 @@
 import * as React from "react"
-import Section from "./common/section"
-import SectionTitle from "./section_title"
+import PageSection from "./page_section"
 
 export default function Skills(props: { listOfSkills: string[] }): JSX.Element {
   const skills = props.listOfSkills.map((skill, index) => {
       return <li key={`skill-${index}`}>{skill}</li>
   })
 
+  const content = [<ul>{skills}</ul>]
+
   return (
-    <Section>
-      <div>
-        <SectionTitle name={"Skills"} />
-        <ul>{skills}</ul>
-      </div>
-    </Section>
+    <PageSection title="Skills">
+      {content}
+    </PageSection>
   )
 }

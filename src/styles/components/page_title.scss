@@ -2,11 +2,6 @@
   font-weight: lighter;
   font-size: 4em;
   color: $main-color;
-  border-bottom: 2px dashed $main-color;
-
-  &::before {
-    content: "# ";
-  }
 
   @include mobile {
     font-size: 3em;

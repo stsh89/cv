@@ -7,9 +7,24 @@
 }
 
 .footer-body {
+  display: flex;
+  flex-direction: row-reverse;
   padding-top: 1em;
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
-  border-top: 2px dashed $text-color--dark;
+}
+
+.footer-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border-radius: 50%;
+  display: block;
+  width: 3em;
+  height: 3em;
+
+  @include m("github") {
+    background-image: url("../images/github.png");
+  }
 }
