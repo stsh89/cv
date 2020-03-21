@@ -37,7 +37,8 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         loader: 'file-loader',
         options: {
-          outputPath: '/dist/cv/images',
+          publicPath: "/cv/",
+          outputPath: '/dist/images',
         },
       }
     ]
