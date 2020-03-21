@@ -11,14 +11,16 @@ export default function JobInfo(props: {job: Job, key: string}): JSX.Element {
     })
 
   return (
-    <div>
+    <div className="job-info">
       <TimeFrame from={props.job.timeFrame.from} to={props.job.timeFrame.to}/>
-      <CompanyInfo
-        siteLink={props.job.companyInfo.siteLink}
-        companyName={props.job.companyInfo.companyName}
-        jobTitle={props.job.companyInfo.jobTitle}
-      />
-      {descriptionElements}
+      <div className="job-descriptions">
+        <CompanyInfo
+          siteLink={props.job.companyInfo.siteLink}
+          companyName={props.job.companyInfo.companyName}
+          jobTitle={props.job.companyInfo.jobTitle}
+        />
+        {descriptionElements}
+      </div>
     </div>
   )
 }

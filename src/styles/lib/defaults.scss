@@ -2,11 +2,16 @@
 
 $grid-breakpoint-md: 767px;
 
+$main-color: #8be9fd;
+$foreground-color: #f8f8f2;
+$background-color: #282a36;
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
+  color: $foreground-color;
 
   @include mobile {
     font-size: 14px;

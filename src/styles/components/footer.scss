@@ -1,11 +1,34 @@
 .footer {
-  border-top: 1px solid grey;
-  padding-top: 5px;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  background: $background-color;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.footer-body {
+  padding-top: 1em;
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
-  margin-top: 20px;
-  margin-right: 0;
-  margin-bottom: 20px;
-  margin-left: 0;
+}
+
+.footer-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border-radius: 50%;
+  display: block;
+  width: 3em;
+  height: 3em;
+
+  @include m("github") {
+    background-image: url("../images/github.png");
+  }
 }

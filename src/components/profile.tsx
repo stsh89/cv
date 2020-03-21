@@ -1,28 +1,25 @@
 import * as React from "react"
-import Section from "./common/section"
-import SectionTitle from "./section_title"
+import List from "./common/list"
+import PageSection from "./page_section"
 
 export default function Profile(props: {
   summary: string, contacts: {kind: string, identifier: string}[]
 }): JSX.Element {
   const contacts = props.contacts.map(function(contact) {
     return(
-      <li key={contact.kind + contact.identifier}>
+      <li className="list-item" key={contact.kind + contact.identifier}>
         {contact.kind}: {contact.identifier}
       </li>
     )
   })
 
   return (
-    <Section>
-      <div>
-        <SectionTitle name={"Profile"} />
-        <p>{props.summary}</p>
-        <p>Contacts</p>
-        <ul>
-          {contacts}
-        </ul>
-      </div>
-    </Section>
+    <PageSection title="Profile">
+      <p>{props.summary}</p>
+      <p>Contacts</p>
+      <List>
+        {contacts}
+      </List>
+    </PageSection>
   )
 }

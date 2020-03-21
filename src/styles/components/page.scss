@@ -1,7 +1,16 @@
 .page {
+  background: $background-color;
+}
+
+.page-body {
   width: 75%;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-right: 1em;
+  padding-bottom: 0;
+  padding-left: 1em;
+
+  @include mobile {
+    width: 100%;
+  }
 }

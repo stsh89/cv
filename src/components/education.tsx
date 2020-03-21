@@ -1,6 +1,5 @@
 import * as React from "react"
-import Section from "./common/section"
-import SectionTitle from "./section_title"
+import PageSection from "./page_section"
 import JobInfo from "./job_info/block"
 import Education from "../models/education"
 
@@ -11,11 +10,8 @@ export default function WorkExperience(props: {educations: Education[]}): JSX.El
     })
 
   return (
-    <Section>
-      <div>
-        <SectionTitle name={"Education"} />
-        {educationElements}
-      </div>
-    </Section>
+    <PageSection title="Education">
+      {educationElements}
+    </PageSection>
   )
 }

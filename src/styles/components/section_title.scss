@@ -1,4 +1,11 @@
 .section-title {
-  font-weight: lighter;
-  font-size: 20px;
+  font-weight: normal;
+  font-size: 1.2em;
+  color: $main-color;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  display: inline-block;
+  @include neu-square;
 }

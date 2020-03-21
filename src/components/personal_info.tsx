@@ -1,19 +1,20 @@
 import * as React from "react"
-import Section from "./common/section"
-import PageTitle from "./page_title"
+import List from "./common/list"
+import PageSection from "./page_section"
 
 export default function PersonalInfo(props: {
-  name: string, dateOfBirth: string, maritalStatus: string
+  dateOfBirth: string, maritalStatus: string
 }): JSX.Element {
+  const content = [
+    <List>
+      <li className="list-item">Date of birth: {props.dateOfBirth}</li>
+      <li className="list-item">Marital status: {props.maritalStatus}</li>
+    </List>
+  ]
+
   return (
-    <Section>
-      <div>
-        <PageTitle name={props.name} />
-        <ul>
-          <li>Date of birth: {props.dateOfBirth}</li>
-          <li>Marital status: {props.maritalStatus}</li>
-        </ul>
-      </div>
-    </Section>
+    <PageSection title="Personal Info">
+      {content}
+    </PageSection>
   )
 }

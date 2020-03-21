@@ -1,5 +1,6 @@
 {
   "name": "Stanislav Shandyga",
+  "position": "Software Engineer",
   "dateOfBirth": "17th September 1989",
   "maritalStatus": "single",
   "summary": "I am specializing in object-oriented approaches and RESTful API designs. I have solid background in Computer Science (algorithms, data structures, operating systems). I am familiar with SQL and NoSQL databases, networking and Linux shell scripting. I introduce myself as an ambitious problem solver with a passion for creativity. Personal qualities: positive team attitude, happy to help others, learn, and take on new challenges.",
@@ -21,7 +22,7 @@
   ],
   "educations": [
     {
-      "timeFrame": {"from": "November 2014", "to": "May 2015"},
+      "timeFrame": {"from": "Nov 2014", "to": "May 2015"},
       "companyInfo": {
         "siteLink": "http://www.111minutes.com/",
         "companyName": "111minutes"
@@ -34,7 +35,7 @@
       ]
     },
     {
-      "timeFrame": {"from": "September 2006", "to": "May 2010"},
+      "timeFrame": {"from": "Sep 2006", "to": "May 2010"},
       "companyInfo": {
         "siteLink": "http://www.diit.edu.ua/",
         "companyName": "Dnipropetrovsk National University of railway transport named after academician V.  Lazaryan "
@@ -49,7 +50,7 @@
   ],
   "jobs": [
     {
-      "timeFrame": {"from": "August 2016", "to": "Present Time"},
+      "timeFrame": {"from": "Aug 2016", "to": "Till now"},
       "companyInfo": {
         "siteLink": "https://anadea.info/",
         "companyName": "Anadea",
@@ -71,7 +72,7 @@
       ]
     },
     {
-      "timeFrame": {"from": "June 2015", "to": "August 2016"},
+      "timeFrame": {"from": "Jun 2015", "to": "Aug 2016"},
       "companyInfo": {
         "siteLink": "http://www.111minutes.com/",
         "companyName": "111minutes",
@@ -93,7 +94,7 @@
       ]
     },
     {
-      "timeFrame": {"from": "January 2012", "to": "October 2014"},
+      "timeFrame": {"from": "Jan 2012", "to": "Oct 2014"},
       "companyInfo": {
         "siteLink": "http://dndzschool18.klasna.com/",
         "companyName": "School №18",

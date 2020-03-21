@@ -1,14 +1,12 @@
 import * as React from "react"
-import Section from "./common/section"
-import SectionTitle from "./section_title"
+import PageSection from "./page_section"
 
 export default function Hooby(props: { hobbies: string }): JSX.Element {
+  const content = [<p>{props.hobbies}</p>]
+
   return (
-    <Section>
-      <div>
-        <SectionTitle name={"Hobbies"} />
-        <p>{props.hobbies}</p>
-      </div>
-    </Section>
+    <PageSection title="Hobbies">
+      {content}
+    </PageSection>
   )
 }
