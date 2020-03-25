@@ -1,1 +1,1 @@
-npx webpack --mode production && cp index.production.html dist/index.html
+npx webpack --mode production && cp index.html dist/index.html

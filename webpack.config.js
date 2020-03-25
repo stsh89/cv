@@ -1,9 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: path.join(__dirname, './src/index.ts'),
+  entry: path.join(__dirname, "./src/index.ts"),
   output: {
-    filename: './dist/app.js',
+    filename: "./dist/main.js",
+    publicPath: "/cv",
     path: __dirname
   },
   module: {
