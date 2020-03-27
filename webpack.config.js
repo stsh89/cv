@@ -3,9 +3,11 @@ const path = require('path');
 module.exports = {
   entry: path.join(__dirname, "./src/index.ts"),
   output: {
-    filename: "./dist/main.js",
-    publicPath: "/cv",
-    path: __dirname
+    publicPath: "/cv/"
+  },
+  devServer: {
+    publicPath: "/cv/",
+    contentBase: "./dist"
   },
   module: {
     rules: [
@@ -13,18 +15,6 @@ module.exports = {
         test: /\.tsx?$/,
         loader: 'ts-loader',
         exclude: /node_modules/
-      },
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts/'
-            }
-          }
-        ]
       },
       {
         test: /\.s[ac]ss$/i,
@@ -38,8 +28,8 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         loader: 'file-loader',
         options: {
-          publicPath: "/cv/images",
-          outputPath: '/dist/images',
+          outputPath: '/images',
+          publicPath: '/images/'
         },
       }
     ]
