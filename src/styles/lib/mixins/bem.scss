@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin e($name) {
+  &__#{$name} {
+    @content;
+  }
+}

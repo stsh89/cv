@@ -1,16 +1,42 @@
 .page {
-  background: $background-color;
 }
 
 .page-body {
-  width: 75%;
-  margin: 0 auto;
-  padding-top: 0;
-  padding-right: 1em;
-  padding-bottom: 0;
-  padding-left: 1em;
+  display: flex;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
 
-  @include mobile {
-    width: 100%;
+  @include e("overview") {
+    background: antiquewhite;
+    width: 65%;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+  }
+
+  @include e("summary") {
+    background: navajowhite;
+    width: 35%;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+  }
+}
+
+@include mobile {
+  .page-body {
+    flex-direction: column-reverse;
+
+    @include e("overview") {
+      width: initial;
+    }
+
+    @include e("summary") {
+      width: initial;
+    }
   }
 }

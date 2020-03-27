@@ -5,6 +5,6 @@ import * as ReactDOM from "react-dom";
 export default function init(): void {
   ReactDOM.render(
     <Page />,
-    document.getElementById("root")
+    document.getElementById("app")
   )
 }
