@@ -1,8 +1,8 @@
-# Project overview
+## Project overview
 
 CV written in Typescript using React.
 
-# Development
+## Development
 
 Start dev server
 
@@ -10,6 +10,10 @@ Start dev server
 ./scripts/server
 ```
 
-# Deploy
+## Deploy
 
-Just push to master and rely on Github actions. Download CV as [PDF](https://url-to-pdf-api.herokuapp.com/api/render?url=https://stsh89.github.io/cv)
+Just push to master and rely on Github actions.
+
+## PDF
+
+Download CV as [PDF](https://url-to-pdf-api.herokuapp.com/api/render?url=https://stsh89.github.io/cv&&emulateScreenMedia=false). Check following [repo](https://github.com/alvarcarto/url-to-pdf-api) for more information.
