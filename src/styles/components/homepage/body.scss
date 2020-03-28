@@ -1,10 +1,4 @@
-.console {
-  background: url("../images/background/desktop.webp") no-repeat center center fixed;
-  background-size: cover;
-  min-height: 100vh;
-}
-
-.dashboard {
+@include n($homepage, "body") {
   display: flex;
   margin-top: 0;
   margin-right: auto;
@@ -45,11 +39,7 @@
 }
 
 @include mobile {
-  .console {
-    background: url("../images/background/mobile.webp") no-repeat center center fixed;
-  }
-
-  .dashboard {
+  @include n($homepage, "body") {
     flex-direction: column-reverse;
 
     @include e("overview") {

@@ -1,0 +1,7 @@
+@include n($homepage, "section") {
+  @include e("title") {
+    font-size: 2em;
+    font-weight: lighter;
+    color: $homepage-main-color;
+  }
+}

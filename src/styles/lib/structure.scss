@@ -1,0 +1,23 @@
+@mixin m($name) {
+  &--#{$name} {
+    @content;
+  }
+}
+
+@mixin e($name) {
+  &__#{$name} {
+    @content;
+  }
+}
+
+@mixin n($namespace, $name) {
+  .#{$namespace}-#{$name} {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: $mobile-width) {
+    @content;
+  }
+}

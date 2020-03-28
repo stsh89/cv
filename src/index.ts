@@ -1,4 +1,4 @@
-import "./styles/index.scss"
+import "./styles/init.scss"
 import init from "./lib/init"
 
 init()
