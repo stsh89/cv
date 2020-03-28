@@ -1,0 +1,65 @@
+.console {
+  background: url("../images/background/desktop.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+
+  @include e("overview") {
+    opacity: 70%;
+    background: black;
+    color: white;
+    height: 100%;
+    width: 65%;
+    margin-top: 1em;
+    margin-right: 0;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+  }
+
+  @include e("summary") {
+    opacity: 70%;
+    background: black;
+    color: white;
+    height: 100%;
+    width: 35%;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+  }
+}
+
+@include mobile {
+  .console {
+    background: url("../images/background/mobile.jpg") no-repeat center center fixed;
+  }
+
+  .dashboard {
+    flex-direction: column-reverse;
+
+    @include e("overview") {
+      margin-right: 1em;
+      width: initial;
+    }
+
+    @include e("summary") {
+      margin-bottom: 0;
+      width: initial;
+    }
+  }
+}
