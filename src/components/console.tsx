@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as userInfo from "..//../data/user_info.json"
 
-export default function Page(): JSX.Element {
+export default function Console(): JSX.Element {
   return (
     <div className="page">
       <div className="page-body">

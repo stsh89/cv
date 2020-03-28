@@ -1,10 +1,10 @@
-import Page from "../components/page";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import Console from "../components/console";
 
 export default function init(): void {
   ReactDOM.render(
-    <Page />,
-    document.getElementById("app")
+    <Console />,
+    document.getElementById("virt")
   )
 }
