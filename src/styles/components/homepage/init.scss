@@ -13,8 +13,17 @@
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+}
 
-  @include mobile {
-    background-image: url("../images/background/mobile.webp") no-repeat center center fixed;
+@include mobile {
+  .#{$homepage} {
+    background-image: url("../images/background/mobile.webp");
+  }
+}
+
+@media print {
+  .#{$homepage} {
+    background-image: none;
+    background-color: #000000e8;
   }
 }

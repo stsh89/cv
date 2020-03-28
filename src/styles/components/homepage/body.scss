@@ -44,3 +44,9 @@
     }
   }
 }
+
+@media print {
+  @include n($homepage, "body") {
+    background-image: none;
+  }
+}
