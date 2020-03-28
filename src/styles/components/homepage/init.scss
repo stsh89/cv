@@ -8,11 +8,13 @@
 @import "./block";
 
 .#{$homepage} {
-  background: url("../images/background/desktop.webp") no-repeat center center fixed;
+  background-image: url("../images/background/desktop.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
-  min-height: 100vh;
 
   @include mobile {
-    background: url("../images/background/mobile.webp") no-repeat center center fixed;
+    background-image: url("../images/background/mobile.webp") no-repeat center center fixed;
   }
 }
