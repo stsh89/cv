@@ -1,5 +1,5 @@
 .console {
-  background: url("../images/background/desktop.jpg") no-repeat center center fixed;
+  background: url("../images/background/desktop.webp") no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
 }
@@ -46,7 +46,7 @@
 
 @include mobile {
   .console {
-    background: url("../images/background/mobile.jpg") no-repeat center center fixed;
+    background: url("../images/background/mobile.webp") no-repeat center center fixed;
   }
 
   .dashboard {
