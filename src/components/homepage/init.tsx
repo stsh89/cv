@@ -1,6 +1,8 @@
 import * as React from "react"
 import * as userInfo from "../../../data/user_info.json"
 import Contacts from "./contacts"
+import PersonalInfo from "./personal_info"
+import TechnologySummary from "./technology_summary"
 
 export default function Homepage(): JSX.Element {
   return (
@@ -15,7 +17,9 @@ export default function Homepage(): JSX.Element {
         <div className="homepage-body__summary">
           <h1 className="homepage-title">{userInfo.name}</h1>
           <h2 className="homepage-subtitle">{userInfo.position}</h2>
+          <PersonalInfo />
           <Contacts />
+          <TechnologySummary />
         </div>
       </div>
       <div className="homepage-footer">
@@ -24,7 +28,7 @@ export default function Homepage(): JSX.Element {
           For more information, please refer to <a className="homepage-link" href="https://unlicense.org">https://unlicense.org</a>
         </p>
         <p className="homepage-footer__text">
-         2020 CV <a className="homepage-link" href="https://stsh89.github.io/cv/">https://stsh89.github.io/cv/</a>
+         2020 / CV / <a className="homepage-link" href="https://stsh89.github.io/cv/">https://stsh89.github.io/cv/</a>
         </p>
       </div>
     </div>

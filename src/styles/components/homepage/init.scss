@@ -7,6 +7,7 @@
 @import "./list";
 @import "./block";
 @import "./footer";
+@import "./technology_list";
 
 .#{$homepage} {
   background-image: url("../images/background/desktop.webp");
@@ -33,6 +34,6 @@
 @media print {
   .#{$homepage} {
     background-image: none;
-    background-color: #000000e8;
+    background-color: #010910;
   }
 }
