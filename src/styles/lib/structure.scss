@@ -16,8 +16,8 @@
   }
 }
 
-@mixin mobile {
-  @media only screen and (max-width: $mobile-width) {
+@mixin desktop {
+  @media only screen and (min-width: $mobile-width) {
     @content;
   }
 }

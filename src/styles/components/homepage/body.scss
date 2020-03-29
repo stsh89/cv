@@ -1,47 +1,48 @@
 @include n($homepage, "body") {
   display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
   padding-top: 0;
   padding-right: 0;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   padding-left: 0;
-  justify-content: flex-end;
 
   @include e("overview") {
-    width: 65%;
+    width: initial;
     margin-top: 1em;
-    margin-right: 0;
+    margin-right: 1em;
     margin-bottom: 0;
-    margin-left: 2em;
+    margin-left: 1em;
   }
 
   @include e("summary") {
-    width: 35%;
+    width: initial;
     margin-top: 1em;
-    margin-right: 2em;
+    margin-right: 1em;
     margin-bottom: 0;
-    margin-left: 2em;
+    margin-left: 1em;
   }
 }
 
-@include mobile {
+@include desktop {
   @include n($homepage, "body") {
-    flex-direction: column-reverse;
-    padding-bottom: 1em;
+    flex-direction: row;
+    padding-bottom: 2em;
 
     @include e("overview") {
-      margin-left: 1em;
-      margin-right: 1em;
-      width: initial;
+      width: 65%;
+      margin-left: 2em;
+      margin-right: 0;
     }
 
     @include e("summary") {
-      margin-left: 1em;
-      margin-right: 1em;
-      width: initial;
+      width: 35%;
+      margin-left: 2em;
+      margin-right: 2em;
     }
   }
 }

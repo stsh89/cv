@@ -13,8 +13,8 @@
 
 .#{$homepage} {
   background-image: url("../images/background/desktop.webp");
-  background-image: linear-gradient(to right, rgba(0,0,0,0.5),
-                    rgba(0,0,0,1)), url("../images/background/desktop.webp");
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5),
+                    rgba(0,0,0,1)), url("../images/background/mobile.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -25,10 +25,10 @@
   flex-direction: column;
 }
 
-@include mobile {
+@include desktop {
   .#{$homepage} {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5),
-                      rgba(0,0,0,1)), url("../images/background/mobile.webp");
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5),
+    rgba(0,0,0,1)), url("../images/background/desktop.webp");
   }
 }
 
