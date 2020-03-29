@@ -9,6 +9,7 @@
 @import "./footer";
 @import "./technology_list";
 @import "./progress";
+@import "./header";
 
 .#{$homepage} {
   background-image: url("../images/background/desktop.webp");
@@ -22,7 +23,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 @include mobile {

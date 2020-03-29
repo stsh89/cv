@@ -5,10 +5,12 @@ import PersonalInfo from "./personal_info"
 import TechnologySummary from "./technology_summary"
 import Skills from "./skills"
 import Footer from "./footer"
+import Header from "./header"
 
 export default function Homepage(): JSX.Element {
   return (
     <div className="homepage">
+      <Header />
       <div className="homepage-body">
         <div className="homepage-body__overview">
           <section className="homepage-section">
