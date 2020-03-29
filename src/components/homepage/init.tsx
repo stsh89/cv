@@ -3,6 +3,7 @@ import * as userInfo from "../../../data/user_info.json"
 import Contacts from "./contacts"
 import PersonalInfo from "./personal_info"
 import TechnologySummary from "./technology_summary"
+import Skills from "./skills"
 import Footer from "./footer"
 
 export default function Homepage(): JSX.Element {
@@ -21,6 +22,7 @@ export default function Homepage(): JSX.Element {
           <PersonalInfo />
           <Contacts />
           <TechnologySummary />
+          <Skills />
         </div>
       </div>
       <Footer />
