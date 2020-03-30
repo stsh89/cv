@@ -24,8 +24,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: npm install
-      - run: ./scripts/build
+      - name: Install Node.js dependencies
+        run: npm install
+
+      - name: Lint
+        uses: samuelmeuli/lint-action@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          stylelint: true
+
+      - name: Build
+        run: ./scripts/build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
