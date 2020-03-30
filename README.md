@@ -1,3 +1,5 @@
+![ci](https://github.com/stsh89/cv/workflows/ci/badge.svg)
+
 ## Project overview
 
 CV written in Typescript using React. Check live version at [https://stsh89.github.io/cv/](https://stsh89.github.io/cv/)
