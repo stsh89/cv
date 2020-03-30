@@ -1,4 +1,4 @@
-@include n($homepage, "title") {
+@include n($homepage, 'title') {
   font-size: 3em;
   font-weight: lighter;
   color: $homepage-main-color;

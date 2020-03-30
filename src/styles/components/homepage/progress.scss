@@ -1,12 +1,12 @@
-@include n($homepage, "progress") {
+@include n($homepage, 'progress') {
   display: flex;
   align-items: center;
 
-  @include e("label") {
+  @include e('label') {
     flex-shrink: 0;
   }
 
-  @include e("bar") {
+  @include e('bar') {
     height: 0.2em;
     border: none;
 

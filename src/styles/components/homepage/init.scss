@@ -1,20 +1,20 @@
-@import "./variables";
-@import "./title";
-@import "./subtitle";
-@import "./body";
-@import "./section";
-@import "./link";
-@import "./list";
-@import "./block";
-@import "./footer";
-@import "./technology_list";
-@import "./progress";
-@import "./header";
+@import './variables';
+@import './title';
+@import './subtitle';
+@import './body';
+@import './section';
+@import './link';
+@import './list';
+@import './block';
+@import './footer';
+@import './technology_list';
+@import './progress';
+@import './header';
 
 .#{$homepage} {
-  background-image: url("../images/background/desktop.webp");
+  background-image: url('../images/background/desktop.webp');
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.5),
-                    rgba(0,0,0,1)), url("../images/background/mobile.webp");
+                    rgba(0,0,0,1)), url('../images/background/mobile.webp');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -28,7 +28,7 @@
 @include desktop {
   .#{$homepage} {
     background-image: linear-gradient(to right, rgba(0,0,0,0.5),
-    rgba(0,0,0,1)), url("../images/background/desktop.webp");
+    rgba(0,0,0,1)), url('../images/background/desktop.webp');
   }
 }
 

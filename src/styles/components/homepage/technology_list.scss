@@ -1,9 +1,9 @@
-@include n($homepage, "technology-list") {
+@include n($homepage, 'technology-list') {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 
-  @include e("item") {
+  @include e('item') {
     background-color: $homepage-main-dark-color;
     clip-path: polygon(0% 0%, 0% 0%, calc(100% - 10px) 0%, 100% 10px, 100% 0, 100% 0, 100% 100%, 0% 100%);
     margin-top: 0.5em;

@@ -1,4 +1,4 @@
-@include n($homepage, "link") {
+@include n($homepage, 'link') {
   text-decoration: none;
   color: $homepage-sub-color;
 

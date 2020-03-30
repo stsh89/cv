@@ -1,4 +1,4 @@
-@include n($homepage, "body") {
+@include n($homepage, 'body') {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
@@ -11,7 +11,7 @@
   padding-bottom: 1em;
   padding-left: 0;
 
-  @include e("overview") {
+  @include e('overview') {
     width: initial;
     margin-top: 1em;
     margin-right: 1em;
@@ -19,7 +19,7 @@
     margin-left: 1em;
   }
 
-  @include e("summary") {
+  @include e('summary') {
     width: initial;
     margin-top: 1em;
     margin-right: 1em;
@@ -29,17 +29,17 @@
 }
 
 @include desktop {
-  @include n($homepage, "body") {
+  @include n($homepage, 'body') {
     flex-direction: row;
     padding-bottom: 2em;
 
-    @include e("overview") {
+    @include e('overview') {
       width: 65%;
       margin-left: 2em;
       margin-right: 0;
     }
 
-    @include e("summary") {
+    @include e('summary') {
       width: 35%;
       margin-left: 2em;
       margin-right: 2em;

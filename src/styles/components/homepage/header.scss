@@ -1,4 +1,4 @@
-@include n($homepage, "header") {
+@include n($homepage, 'header') {
   display: flex;
   flex-direction: row-reverse;
   padding-top: 0;
@@ -6,18 +6,18 @@
   padding-bottom: 1em;
   padding-left: 1em;
 
-  @include e("text") {
+  @include e('text') {
     margin-top: 1em;
   }
 }
 
 @include desktop {
-  @include n($homepage, "header") {
+  @include n($homepage, 'header') {
     padding-right: 2em;
     padding-bottom: 0;
     padding-left: 2em;
 
-    @include e("text") {
+    @include e('text') {
       margin-top: 2em;
     }
   }
