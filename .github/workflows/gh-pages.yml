@@ -34,9 +34,11 @@ jobs:
           stylelint: true
 
       - name: Build
+        if: success()
         run: ./scripts/build
 
       - name: Deploy
+        if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
