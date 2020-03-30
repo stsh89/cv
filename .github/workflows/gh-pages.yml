@@ -32,6 +32,7 @@ jobs:
         with:
           github_token: ${{ secrets.github_token }}
           stylelint: true
+          eslint: true
 
       - name: Build
         run: ./scripts/build
