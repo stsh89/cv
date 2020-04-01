@@ -1,0 +1,33 @@
+@use "../config";
+@use "../utils/screen";
+@use "reset";
+
+.app {
+  background-color: config.$background-color;
+  color: config.$text-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@include screen.desktop {
+  .app {
+    background-attachment: fixed;
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)),
+      url("../images/background/desktop.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media print {
+  .app {
+    padding-bottom: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0;
+  }
+}

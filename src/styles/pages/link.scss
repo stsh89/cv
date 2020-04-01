@@ -1,0 +1,10 @@
+@use "config";
+
+.page-link {
+  color: config.$page-secondary-light-color;
+  text-decoration: none;
+
+  &:hover {
+    color: config.$page-secondary-dark-color;
+  }
+}

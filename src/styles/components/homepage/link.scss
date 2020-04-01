@@ -1,8 +1,0 @@
-@include n($homepage, 'link') {
-  text-decoration: none;
-  color: $homepage-sub-color;
-
-  &:hover {
-    color: $homepage-sub-dark-color;
-  }
-}

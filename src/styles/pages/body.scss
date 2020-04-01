@@ -1,0 +1,51 @@
+@use "../utils/bem";
+@use "../utils/screen";
+
+.page-body {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-bottom: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+
+  @include bem.e("overview") {
+    margin-bottom: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    width: initial;
+  }
+
+  @include bem.e("summary") {
+    margin-bottom: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    width: initial;
+  }
+}
+
+@include screen.desktop {
+  .page-body {
+    flex-direction: row;
+    padding-bottom: 2em;
+
+    @include bem.e("overview") {
+      margin-left: 2em;
+      margin-right: 0;
+      width: 65%;
+    }
+
+    @include bem.e("summary") {
+      margin-left: 2em;
+      margin-right: 2em;
+      width: 35%;
+    }
+  }
+}

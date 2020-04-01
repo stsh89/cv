@@ -1,0 +1,5 @@
+@use "config";
+
+.page-subtitle {
+  color: config.$page-primary-light-color;
+}

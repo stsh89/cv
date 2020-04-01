@@ -1,3 +1,7 @@
 {
-  "extends": "stylelint-config-sass-guidelines"
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "string-quotes": "double",
+    "font-weight-notation": "named-where-possible"
+  }
 }

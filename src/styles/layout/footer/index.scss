@@ -1,0 +1,26 @@
+@use "../../utils/bem";
+@use "../../utils/screen";
+@forward "link";
+
+.footer {
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0;
+
+  @include bem.e("text") {
+    margin-top: 1em;
+  }
+}
+
+@include screen.desktop {
+  .footer {
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    @include bem.e("text") {
+      margin-top: 2em;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use "../utils/screen";
+
+* {
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+@include screen.desktop {
+  * {
+    font-size: 16px;
+  }
+}
+

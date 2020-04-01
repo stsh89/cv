@@ -1,0 +1,7 @@
+@use "../config";
+
+@mixin desktop {
+  @media only screen and (min-width: config.$mobile-width) {
+    @content;
+  }
+}

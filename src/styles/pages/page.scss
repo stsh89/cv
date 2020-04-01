@@ -1,0 +1,21 @@
+@use "../utils/screen";
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+@include screen.desktop {
+  .page {
+    flex-direction: row;
+  }
+}
+
+@media print {
+  .page {
+    padding-bottom: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0;
+  }
+}

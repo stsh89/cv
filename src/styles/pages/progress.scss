@@ -1,0 +1,28 @@
+@use "../utils/bem";
+@use "config";
+
+.page-progress {
+  align-items: center;
+  display: flex;
+
+  @include bem.e("label") {
+    flex-shrink: 0;
+  }
+
+  @include bem.e("bar") {
+    border: unset;
+    height: 0.2em;
+
+    &[value] {
+      background-color: config.$page-text-color;
+
+      &::-moz-progress-bar {
+        background-color: config.$page-secondary-dark-color;
+      }
+
+      &::-webkit-progress-value {
+        background-color: config.$page-secondary-dark-color;
+      }
+    }
+  }
+}

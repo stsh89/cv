@@ -1,0 +1,7 @@
+@use "config";
+
+.page-title {
+  color: config.$page-primary-light-color;
+  font-size: 3em;
+  font-weight: lighter;
+}

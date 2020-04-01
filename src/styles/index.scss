@@ -1,0 +1,10 @@
+@use "config";
+@use "app";
+@use "layout";
+@use "pages" with (
+  $page-primary-dark-color: config.$primary-dark-color,
+  $page-primary-light-color: config.$primary-light-color,
+  $page-secondary-dark-color: config.$secondary-dark-color,
+  $page-secondary-light-color: config.$secondary-light-color,
+  $page-text-color: config.$text-color
+);

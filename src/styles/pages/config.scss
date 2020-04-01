@@ -1,0 +1,7 @@
+@use "../config";
+
+$page-primary-dark-color: config.$primary-dark-color !default;
+$page-primary-light-color: config.$primary-light-color !default;
+$page-secondary-dark-color: config.$secondary-dark-color !default;
+$page-secondary-light-color: config.$secondary-light-color !default;
+$page-text-color: config.$text-color !default;

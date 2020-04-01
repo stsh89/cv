@@ -1,0 +1,10 @@
+@use "../utils/bem";
+@use "config";
+
+.page-section {
+  @include bem.e("title") {
+    color: config.$page-primary-light-color;
+    font-size: 2em;
+    font-weight: lighter;
+  }
+}
