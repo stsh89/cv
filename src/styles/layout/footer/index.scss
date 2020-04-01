@@ -1,6 +1,7 @@
 @use "../../utils/bem";
 @use "../../utils/screen";
 @forward "link";
+@forward "list";
 
 .footer {
   padding-bottom: 1em;
