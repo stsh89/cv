@@ -39,13 +39,13 @@
     @include bem.e("overview") {
       margin-left: 2em;
       margin-right: 0;
-      width: 65%;
+      width: 60%;
     }
 
     @include bem.e("summary") {
       margin-left: 2em;
       margin-right: 2em;
-      width: 35%;
+      width: 40%;
     }
   }
 }
