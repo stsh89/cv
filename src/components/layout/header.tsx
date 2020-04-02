@@ -11,8 +11,8 @@ export default function Header():JSX.Element {
   )
 
   return (
-    <div className="header">
+    <header className="header">
       <div className="header__text">{currentTime}</div>
-    </div>
+    </header>
   )
 }

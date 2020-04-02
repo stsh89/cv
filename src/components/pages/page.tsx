@@ -7,7 +7,7 @@ import Skills from "./skills"
 
 export default function Homepage(): JSX.Element {
   return (
-    <div className="page">
+    <main className="page">
       <div className="page-body">
         <div className="page-body__overview">
           <section className="page-section">
@@ -24,6 +24,6 @@ export default function Homepage(): JSX.Element {
           <Skills />
         </div>
       </div>
-    </div>
+    </main>
   )
 }
