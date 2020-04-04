@@ -18,4 +18,4 @@ Just push to master and rely on Github actions.
 
 ## PDF
 
-Download CV as [PDF](https://url-to-pdf-api.herokuapp.com/api/render?url=https://stsh89.github.io/cv/&emulateScreenMedia=false&attachmentName=cv.pdf&pdf.pageRanges=2). Check following [repo](https://github.com/alvarcarto/url-to-pdf-api) for more information.
+Download CV as [PDF](https://url-to-pdf-api.herokuapp.com/api/render?url=https://stsh89.github.io/cv/&emulateScreenMedia=false&pdf.pageRanges=1-2). Check following [repo](https://github.com/alvarcarto/url-to-pdf-api) for more information.
