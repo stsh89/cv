@@ -2,21 +2,21 @@
 @use "../../utils/screen";
 
 .header {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-bottom: 1em;
+  padding-bottom: 0;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 0;
 
   @include bem.e("text") {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 1em;
   }
 }
 
 @include screen.desktop {
   .header {
-    padding-bottom: 0;
     padding-left: 2em;
     padding-right: 2em;
 

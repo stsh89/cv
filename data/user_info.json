@@ -20,7 +20,7 @@
   "certifications": [
     "MongoDB for Developers, a course of study offered by MongoDB, Inc. Certification can be verified at http://education.mongodb.com/downloads/certificates/7509b38c6cfa4a7ab209cb6ff3b2c5b0/Certificate.pdf"
   ],
-  "educations": [
+  "education": [
     {
       "timeFrame": {"from": "Nov 2014", "to": "May 2015"},
       "companyInfo": {
@@ -48,7 +48,7 @@
       ]
     }
   ],
-  "jobs": [
+  "workExperience": [
     {
       "timeFrame": {"from": "Aug 2016", "to": "Till now"},
       "companyInfo": {

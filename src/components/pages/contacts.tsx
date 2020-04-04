@@ -6,7 +6,7 @@ export default function Contacts(): JSX.Element {
       <p>Contacts:</p>
       <ul className="page-list">
         <li>E-mail: <a className="page-link" href="mailto:stanislavshandyga@gmail.com">stanislavshandyga@gmail.com</a></li>
-        <li>Telegram: <a className="page-link" href="https://t.me/iW7xYVKP6OMU5qwF">Stan</a></li>
+        <li>Telegram: <a className="page-link" href="https://t.me/iW7xYVKP6OMU5qwF">iW7xYVKP6OMU5qwF</a></li>
       </ul>
     </div>
   )
