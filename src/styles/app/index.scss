@@ -5,8 +5,6 @@
 .app {
   background-color: config.$background-color;
   color: config.$text-color;
-  display: flex;
-  flex-direction: column;
 }
 
 @include screen.desktop {
@@ -24,11 +22,9 @@
 
 @media print {
   .app {
-    min-height: 200vh; // creepy hack
     padding-bottom: 0;
     padding-left: 2em;
     padding-right: 2em;
     padding-top: 0;
-    page-break-after: avoid;
   }
 }
