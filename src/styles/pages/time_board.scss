@@ -1,0 +1,21 @@
+@use "../utils/bem";
+@use "../utils/screen";
+@use "config";
+
+.page-time-board {
+  @include bem.e("period") {
+    font-weight: bold;
+  }
+
+  @include bem.e("text") {
+    border-left: 0.1em solid config.$page-text-color;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    padding-bottom: 0;
+    padding-left: 1em;
+    padding-right: 0;
+    padding-top: 0;
+  }
+}

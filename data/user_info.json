@@ -24,8 +24,8 @@
     {
       "timeFrame": {"from": "Nov 2014", "to": "May 2015"},
       "companyInfo": {
-        "siteLink": "http://www.111minutes.com/",
-        "companyName": "111minutes"
+        "link": "http://www.111minutes.com/",
+        "text": "111minutes"
       },
       "descriptions": [
         {
@@ -37,8 +37,8 @@
     {
       "timeFrame": {"from": "Sep 2006", "to": "May 2010"},
       "companyInfo": {
-        "siteLink": "http://www.diit.edu.ua/",
-        "companyName": "Dnipropetrovsk National University of railway transport named after academician V.  Lazaryan "
+        "link": "http://www.diit.edu.ua/",
+        "text": "Dnipropetrovsk National University of railway transport named after academician V.  Lazaryan "
       },
       "descriptions": [
         {
@@ -52,9 +52,8 @@
     {
       "timeFrame": {"from": "Aug 2016", "to": "Till now"},
       "companyInfo": {
-        "siteLink": "https://anadea.info/",
-        "companyName": "Anadea",
-        "jobTitle": "Software engineer"
+        "link": "https://anadea.info/",
+        "text": "Anadea, Software engineer"
       },
       "descriptions": [
         {
@@ -74,9 +73,8 @@
     {
       "timeFrame": {"from": "Jun 2015", "to": "Aug 2016"},
       "companyInfo": {
-        "siteLink": "http://www.111minutes.com/",
-        "companyName": "111minutes",
-        "jobTitle": "Software engineer"
+        "link": "http://www.111minutes.com/",
+        "text": "111minutes, Software engineer"
       },
       "descriptions": [
         {
@@ -96,9 +94,8 @@
     {
       "timeFrame": {"from": "Jan 2012", "to": "Oct 2014"},
       "companyInfo": {
-        "siteLink": "http://dndzschool18.klasna.com/",
-        "companyName": "School №18",
-        "jobTitle": "Support engineer"
+        "link": "http://dndzschool18.klasna.com/",
+        "text": "School №18, Support engineer"
       },
       "descriptions": [
         {

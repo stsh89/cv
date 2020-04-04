@@ -9,6 +9,15 @@
     margin-top: 1em;
   }
 
+  @include bem.e("time-board") {
+    & + & {
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 1em;
+    }
+  }
+
   @include bem.e("title") {
     color: config.$page-primary-light-color;
     font-size: 2em;
@@ -16,21 +25,20 @@
   }
 
   @include bem.e("text") {
-    border-left: 0.1em solid config.$page-text-color;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     margin-top: 1em;
-    padding-bottom: 0;
-    padding-left: 1em;
-    padding-right: 0;
-    padding-top: 0;
   }
 }
 
 @media print {
   .page-section {
     @include bem.e("text") {
+      page-break-inside: avoid;
+    }
+
+    @include bem.e("time-board") {
       page-break-inside: avoid;
     }
   }

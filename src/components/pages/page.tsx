@@ -6,41 +6,24 @@ import TechnologySummary from "./technology_summary"
 import Skills from "./skills"
 import Certification from "./certification"
 import Hobby from "./hobby"
+import TimeBoard from "./time_board"
 
-function buildSection(info: any, code: string): any {
-  const sections = info.map((info: any, i: number) => {
-    const descriptions = info.descriptions.map((description: any, j: number) => {
-      return (
-        <div key={i + j + "code"}>
-          <p>{description.kind}: {description.text}</p>
-        </div>
-      )
-    })
-
-    const companyInfo =
-      [
-        <a className="page-link" href="{info.companyInfo.siteLink}">{info.companyInfo.siteLink}</a>,
-        ", ",
-        info.companyInfo.companyName,
-        ", ",
-        info.companyInfo.jobTitle
-      ]
-
+function buildSection(info: any): any {
+  return info.map((info: any, i: number) => {
     return (
-      <div className="page-section__text" key={i + "code"}>
-        <p>{info.timeFrame.from} - {info.timeFrame.to}</p>
-        <p>{companyInfo}</p>
-        {descriptions}
-      </div>
+      <TimeBoard
+        key={i}
+        timeFrame={info.timeFrame}
+        companyInfo={info.companyInfo}
+        descriptions={info.descriptions}
+      />
     )
   })
-
-  return sections
 }
 
 export default function Homepage(): JSX.Element {
-  const work_experience = buildSection(userInfo.workExperience, "work")
-  const education = buildSection(userInfo.education, "education")
+  const work_experience = buildSection(userInfo.workExperience)
+  const education = buildSection(userInfo.education)
 
   return (
     <main className="page">
