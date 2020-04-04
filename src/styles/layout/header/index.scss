@@ -2,12 +2,12 @@
 @use "../../utils/screen";
 
 .header {
+  display: flex;
+  flex-direction: row-reverse;
   padding-bottom: 0;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 0;
-  display: flex;
-  flex-direction: row-reverse;
 
   @include bem.e("text") {
     margin-bottom: 0;
