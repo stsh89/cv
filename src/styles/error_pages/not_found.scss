@@ -1,0 +1,52 @@
+@use "../config";
+@use "../utils/bem";
+@use "../utils/screen";
+@use "../utils/reset";
+
+.error-page-not-found {
+  text-align: center;
+  align-items: center;
+  background-color: config.$background-color;
+  color: config.$text-color;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @include bem.e("title") {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 4em;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+  }
+
+  @include bem.e("circle") {
+    animation: rotation 2s infinite linear;
+  }
+}
+
+@include screen.desktop {
+  .error-page-not-found {
+    background-attachment: fixed;
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)),
+      url("../images/background/error_pages/not_found_desktop.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}

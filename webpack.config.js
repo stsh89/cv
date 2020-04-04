@@ -7,7 +7,8 @@ module.exports = {
   },
   devServer: {
     publicPath: "/cv/",
-    contentBase: "./dist"
+    contentBase: "./dist",
+    historyApiFallback: true
   },
   module: {
     rules: [
