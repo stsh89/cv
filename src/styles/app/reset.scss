@@ -1,12 +1,6 @@
 @use "../utils/screen";
 @use "../config";
 
-@media print {
-  body {
-    background-color: config.$background-color;
-  }
-}
-
 * {
   font-family: "Source Code Pro", monospace;
   font-size: 14px;
