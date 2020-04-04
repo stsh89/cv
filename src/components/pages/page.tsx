@@ -8,8 +8,12 @@ import Certification from "./certification"
 import Hobby from "./hobby"
 import TimeBoard from "./time_board"
 
-function buildSection(info: any): any {
-  return info.map((info: any, i: number) => {
+function buildSection(info: {
+  timeFrame: {from: string; to: string};
+  companyInfo: {link: string; text: string};
+  descriptions: {kind: string; text: string}[];
+}[]): JSX.Element[] {
+  return info.map((info, i) => {
     return (
       <TimeBoard
         key={i}
@@ -22,7 +26,7 @@ function buildSection(info: any): any {
 }
 
 export default function Homepage(): JSX.Element {
-  const work_experience = buildSection(userInfo.workExperience)
+  const WorkExperience = buildSection(userInfo.workExperience)
   const education = buildSection(userInfo.education)
 
   return (
@@ -35,7 +39,7 @@ export default function Homepage(): JSX.Element {
           </section>
           <section className="page-section">
             <h3 className="page-section__title">Work Experience</h3>
-            {work_experience}
+            {WorkExperience}
           </section>
           <section className="page-section">
             <h3 className="page-section__title">Education</h3>

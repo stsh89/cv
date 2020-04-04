@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function PersonalInfo():JSX.Element {
+export default function PersonalInfo(): JSX.Element {
   return (
     <div className="page-block">
       <p>Personal info:</p>

@@ -1,7 +1,7 @@
 import * as React from "react"
 import Progress from "./progress"
 
-export default function Skills():JSX.Element {
+export default function Skills(): JSX.Element {
   return (
     <div className="page-block">
       <p>Skills:</p>

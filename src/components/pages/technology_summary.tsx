@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function TechnologySummary():JSX.Element {
+export default function TechnologySummary(): JSX.Element {
   return (
     <div className="page-block">
       <p>Technology summary:</p>

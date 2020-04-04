@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function Footer():JSX.Element {
+export default function Footer(): JSX.Element {
   return (
     <footer className="footer">
       <ul className="footer-list">

@@ -1,9 +1,9 @@
 import * as React from "react"
 
 export default function TimeBoard(props: {
-  timeFrame: {from: string, to: string},
-  companyInfo: {link: string, text: string},
-  descriptions: {kind: string, text: string}[]
+  timeFrame: {from: string; to: string};
+  companyInfo: {link: string; text: string};
+  descriptions: {kind: string; text: string}[];
 }): JSX.Element {
   const descriptions = props.descriptions.map((description, i) => {
     return <p key={i}>{description.kind}: {description.text}</p>
