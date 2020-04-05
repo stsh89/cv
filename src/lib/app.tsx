@@ -12,7 +12,7 @@ import {
 
 export default function App(): JSX.Element {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/">
           <div className="app">
