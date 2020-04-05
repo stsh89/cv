@@ -5,14 +5,14 @@ import Footer from "../components/layout/footer"
 import NotFound from "../components/error_pages/not_found"
 
 import {
-  BrowserRouter,
+  HashRouter,
   Switch,
   Route
 } from "react-router-dom"
 
 export default function App(): JSX.Element {
   return (
-    <BrowserRouter basename="/cv">
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/">
           <div className="app">
@@ -23,6 +23,6 @@ export default function App(): JSX.Element {
         </Route>
         <Route component={NotFound} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
