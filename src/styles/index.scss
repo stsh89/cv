@@ -8,4 +8,5 @@
   $page-secondary-light-color: config.$secondary-light-color,
   $page-text-color: config.$text-color
 );
-@use "error_pages"
+@use "error_pages";
+@use "shared";

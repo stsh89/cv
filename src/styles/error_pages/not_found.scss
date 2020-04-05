@@ -10,18 +10,16 @@
   color: config.$text-color;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
+  flex-direction: column;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 10em;
 
   @include bem.e("title") {
     text-transform: uppercase;
-    font-weight: lighter;
-    font-size: 4em;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    text-align: center;
+    font-weight: bold;
   }
 
   @include bem.e("circle") {
@@ -39,14 +37,5 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
   }
 }
