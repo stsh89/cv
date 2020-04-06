@@ -1,0 +1,10 @@
+@use "../../config";
+
+.not-found-page-link {
+  color: config.$secondary-light-color;
+  text-decoration: none;
+
+  &:hover {
+    color: config.$secondary-dark-color;
+  }
+}

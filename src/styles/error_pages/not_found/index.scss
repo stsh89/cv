@@ -1,9 +1,11 @@
-@use "../config";
-@use "../utils/bem";
-@use "../utils/screen";
-@use "../utils/reset";
+@use "../../config";
+@use "../../utils/bem";
+@use "../../utils/screen";
+@use "../../utils/reset";
+@use "link";
+@use "text";
 
-.error-page-not-found {
+.not-found-page {
   align-items: center;
   align-items: center;
   background-color: config.$background-color;
@@ -12,23 +14,25 @@
   flex-direction: column;
   height: 100vh;
   padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 1em;
+  padding-right: 1em;
   padding-top: 10em;
-  text-align: center;
 
   @include bem.e("title") {
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 3em;
   }
 
-  @include bem.e("circle") {
-    animation: rotation 2s infinite linear;
+  @include bem.e("body") {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
   }
 }
 
 @include screen.desktop {
-  .error-page-not-found {
+  .not-found-page {
     background-attachment: fixed;
     background-image:
       linear-gradient(to right, rgba(0, 0, 0, 0.5),
@@ -37,5 +41,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
