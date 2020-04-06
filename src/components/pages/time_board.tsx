@@ -13,7 +13,7 @@ export default function TimeBoard(props: {
     <div className="page-section__time-board">
       <div className="page-time-board__period">{props.timeFrame.from} - {props.timeFrame.to}</div>
       <div className="page-time-board__info">
-        <a className="page-link" href="{props.companyInfo.link}">{props.companyInfo.link}</a>, {props.companyInfo.text}
+        <a className="page-link" href={props.companyInfo.link}>{props.companyInfo.link}</a>, {props.companyInfo.text}
       </div>
       <div className="page-time-board__text">
         {descriptions}
