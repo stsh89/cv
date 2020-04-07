@@ -1,26 +1,21 @@
 @use "../../config";
 @use "../../utils/bem";
 @use "../../utils/screen";
-@use "../../utils/reset";
 @use "link";
 @use "text";
 
 .not-found-page {
   align-items: center;
-  align-items: center;
-  background-color: config.$background-color;
-  color: config.$text-color;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   padding-bottom: 0;
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: 10em;
+  padding-top: 1em;
 
   @include bem.e("title") {
-    font-weight: lighter;
     font-size: 3em;
+    font-weight: lighter;
   }
 
   @include bem.e("body") {
@@ -33,15 +28,8 @@
 
 @include screen.desktop {
   .not-found-page {
-    background-attachment: fixed;
-    background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 1)),
-      url("../images/background/error_pages/not_found_desktop.webp");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-left: 2em;
     padding-right: 2em;
+    padding-top: 2em;
   }
 }
