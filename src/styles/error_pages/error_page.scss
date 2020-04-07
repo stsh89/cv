@@ -7,7 +7,7 @@
   align-items: center;
   background-color: config.$background-color;
   color: config.$text-color;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @include screen.desktop {
