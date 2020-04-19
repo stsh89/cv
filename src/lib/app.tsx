@@ -12,17 +12,15 @@ import {
 
 export default function App(): JSX.Element {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
-      <Switch>
-        <Route exact path="/">
-          <div className="app">
-            <Header />
-            <Page />
-            <Footer />
-          </div>
-        </Route>
-        <Route component={NotFound} />
-      </Switch>
-    </HashRouter>
+    <div className="app">
+      <Header />
+      <HashRouter basename={process.env.PUBLIC_URL}>
+        <Switch>
+          <Route exact path="/" component={Page} />
+          <Route component={NotFound} />
+        </Switch>
+      </HashRouter>
+      <Footer />
+    </div>
   )
 }

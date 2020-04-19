@@ -5,6 +5,7 @@
 .app {
   background-color: config.$background-color;
   color: config.$text-color;
+  min-height: 100vh;
 }
 
 @include screen.desktop {
