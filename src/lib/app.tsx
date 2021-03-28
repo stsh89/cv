@@ -14,7 +14,7 @@ export default function App(): JSX.Element {
   return (
     <div className="app">
       <Header />
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <Switch>
           <Route exact path="/" component={Page} />
           <Route component={NotFound} />
