@@ -11,7 +11,7 @@ export default function Footer(): JSX.Element {
           Source: <a className="footer-link" href="https://github.com/stsh89/cv">https://github.com/stsh89/cv/</a>
         </li>
         <li className="footer-list__item">
-          Live version: <a className="footer-link" href="https://stsh89.github.io/cv/">https://stsh89.github.io/cv/</a>
+          Live version: <a className="footer-link" href="https://stsh89.github.io/cv/#/">https://stsh89.github.io/cv/</a>
         </li>
       </ul>
     </footer>
